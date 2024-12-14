@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Pilihan Ganda</title>
+    <link rel="stylesheet" href="styleQuiz.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h2>Soal Nomor <span id="question-number">1</span>/100</h2>
+      <p id="question-text">Sinonim Kata Mortalitas = ......</p>
+      <div id="options">
+        <button class="option" onclick="selectAnswer('A')">
+          A. Angka kematian
+        </button>
+        <button class="option" onclick="selectAnswer('B')">
+          B. Angka kelahiran
+        </button>
+        <button class="option" onclick="selectAnswer('C')">
+          C. Sebangsa hewan
+        </button>
+        <button class="option" onclick="selectAnswer('D')">D. Gerak</button>
+        <button class="option" onclick="selectAnswer('E')">E. Pukulan</button>
+      </div>
+      <div id="explanation" class="hidden">
+        <p id="explanation-text"></p>
+        <button onclick="nextQuestion()">Lanjut</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

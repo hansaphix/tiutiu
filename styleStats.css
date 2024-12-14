@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* sidebar css template dari sini*/
+.sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar .menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 150px;
+  padding-left: 55px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.role {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+/* sidebar css template sampe sini*/
+/* Main Content Section */
+.main-content {
+  flex: 1;
+  background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.content-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 35px;
+}
+
+.content-header h1 {
+  font-size: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+.content-header p {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  gap: 30px; /* Jarak antar kartu video */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Video Card */
+.video-card {
+  background-color: #e6f7ff;
+  border: 1px solid #cce7ff;
+  border-radius: 12px;
+  width: 220px; /* Lebar setiap kartu video */
+  height: 200px; /* Tinggi setiap kartu video */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Thumbnail */
+.video-thumbnail {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #cce7ff;
+}
+
+.video-thumbnail img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Video Title */
+.video-title {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  margin: 10px 0 0;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.video-card p {
+  margin-top: 60px;
+  font-size: 18px;
+}

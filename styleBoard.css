@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar .menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 150px;
+  padding-left: 55px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.role {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome-message h1 {
+  font-size: 24px;
+  color: #000000;
+}
+
+.welcome-message p {
+  font-size: 16px;
+  color: #000000;
+}
+
+.profile-form {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.profile-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+  /* Adjust container for smaller screens */
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  /* Sidebar becomes collapsible or stacks on top */
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar .menu-item {
+    justify-content: center;
+  }
+
+  .logo img {
+    padding-left: 0;
+    margin: 0 auto 20px;
+  }
+
+  .sidebar h2,
+  .role {
+    text-align: center;
+  }
+
+  /* Adjust main content padding */
+  .main-content {
+    padding: 20px;
+  }
+
+  .welcome-message h1 {
+    font-size: 20px;
+  }
+
+  .welcome-message p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-form {
+    padding: 15px;
+    box-shadow: none;
+    border-radius: 5px;
+  }
+
+  .profile-form input,
+  .profile-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .welcome-message h1 {
+    font-size: 18px;
+  }
+
+  .welcome-message p {
+    font-size: 12px;
+  }
+}
